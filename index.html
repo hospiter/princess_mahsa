@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برای مهسا 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-glow glow-one"></div>
+  <div class="sky-glow glow-two"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <main class="card">
+    <div class="hearts" aria-hidden="true">
+      <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+    </div>
+
+    <!-- 1: Name -->
+    <section id="nameStep" class="step active">
+      <div class="photo-wrap">
+        <img src="./images/mahsa.jpg" alt="مهسا" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+        <div class="photo-fallback">🌷</div>
+      </div>
+      <div class="tiny-label">یه سوال کوچولو ولی خیلی مهم...</div>
+      <h1>اسمت چیه؟ 🌸</h1>
+      <p>اسم اون دختر ناز و دوست‌داشتنی رو بهم بگو.</p>
+
+      <form id="nameForm">
+        <input id="nameInput" type="text" autocomplete="off" placeholder="اینجا بنویس..." autofocus>
+        <button type="submit">بزن بریم 💗</button>
+      </form>
+      <div id="nameError" class="error"></div>
+    </section>
+
+    <!-- 2: Only Mahsa gets in -->
+    <section id="permissionStep" class="step">
+      <div class="big-emoji">👀💗</div>
+      <div class="tiny-label">صبر کن...</div>
+      <h1>آهاااا، مهساست! 🥹</h1>
+      <p>خب حالا که خودتی، یه سوال دیگه دارم...</p>
+      <button class="primary" id="continueBtn">بپرس ببینم چی میگی 🌸</button>
+    </section>
+
+    <!-- 3: Does she love Sepehr? -->
+    <section id="loveStep" class="step">
+      <div class="big-emoji floating">🫣</div>
+      <div class="tiny-label">این یکی رو راستشو بگو...</div>
+      <h1>سپهر رو دوسش داری؟ 💕</h1>
+      <p>فقط یه جواب کوچولو می‌خوام...</p>
+
+      <div class="yes-no">
+        <button class="yes" id="yesBtn">آره 🥹💗</button>
+        <button class="no" id="noBtn">نه 😐</button>
+      </div>
+      <div id="noMessage" class="error"></div>
+    </section>
+
+    <!-- 4: Romantic reveal -->
+    <section id="loveMessageStep" class="step">
+      <div class="confetti" id="confetti"></div>
+      <div class="big-heart">💗</div>
+      <div class="tiny-label">پس جواب آره بود... 🥹</div>
+      <h1>قوربونت بشمممم من نفسم! 😭💗</h1>
+      <p class="love-text">
+        فدات بشم، دورت بگردم، بمیرم برات! 🥹<br>
+        من فقط می‌خواستم پیشت باشم، که مراقبت باشم،<br>
+        که حالت خوب باشه و همیشه لبخند روی لبت باشه.<br>
+        نمی‌خوام ناراحت بشی، غصه بخوری یا حتی یه لحظه<br>
+        حس کنی تنهایی... چون دلم می‌خواد کنارت باشم. 🌷
+      </p>
+      <button class="primary" id="finalBtn">یه چیز دیگه هم برات دارم... 💋</button>
+    </section>
+
+    <!-- 5: Final photo + kisses -->
+    <section id="finalStep" class="step final-step">
+      <div class="kiss-ring" aria-hidden="true">
+        <span>😘</span><span>💋</span><span>😘</span><span>💋</span><span>😘</span>
+        <span>💋</span><span>😘</span><span>💋</span><span>😘</span><span>💋</span>
+        <span>😘</span><span>💋</span><span>😘</span><span>💋</span><span>😘</span>
+        <span>💋</span><span>😘</span><span>💋</span><span>😘</span><span>💋</span>
+      </div>
+
+      <div class="final-photo">
+        <img src="./images/mahsa.jpg" alt="مهسا" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+        <div class="photo-fallback">🌷</div>
+      </div>
+
+      <div class="tiny-label">و اینم سهم تو از بوس‌های سپهر 😭💗</div>
+      <h1>یه عالمه بوس برای مهسا 💋</h1>
+      <p>چون یکی دونه بوس برای تو کمه... خیلی کمه! 🥹</p>
+
+      <button class="replay" id="replayBtn">از اول دوباره؟ 🌸</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
