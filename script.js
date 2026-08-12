@@ -16,7 +16,6 @@ const nameError = document.getElementById("nameError");
 
 nameForm.addEventListener("submit", (event) => {
   event.preventDefault();
-
   const name = normalizeName(nameInput.value);
 
   if (name === "مهسا" || name === "mahsa") {
@@ -77,8 +76,8 @@ document.getElementById("replayBtn").addEventListener("click", () => {
 function launchConfetti() {
   const container = document.getElementById("confetti");
   container.innerHTML = "";
+  const emojis = ["💗", "💖", "💕", "🌸", "✨", "💙"];
 
-  const emojis = ["💗", "💖", "💕", "🌸", "✨", "🩷", "💙"];
   for (let i = 0; i < 45; i++) {
     const item = document.createElement("span");
     item.className = "confetti-piece";
@@ -96,7 +95,7 @@ function launchSparkles() {
   for (let i = 0; i < 35; i++) {
     const item = document.createElement("span");
     item.className = "sparkle";
-    item.textContent = Math.random() > .5 ? "✨" : "💗";
+    item.textContent = Math.random() > 0.5 ? "✨" : "💗";
     item.style.left = Math.random() * 100 + "%";
     item.style.top = 65 + Math.random() * 30 + "%";
     item.style.animationDelay = Math.random() * 1.5 + "s";
@@ -111,7 +110,7 @@ setInterval(() => {
   const container = document.getElementById("sparkles");
   const item = document.createElement("span");
   item.className = "sparkle";
-  item.textContent = Math.random() > .5 ? "✦" : "♡";
+  item.textContent = Math.random() > 0.5 ? "✦" : "♡";
   item.style.left = Math.random() * 100 + "%";
   item.style.top = (75 + Math.random() * 20) + "%";
   container.appendChild(item);
